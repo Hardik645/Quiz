@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #a1c4fd;
+}
+
+.main__container_form {
+    margin: 70px;
+}
+
+.container__form_question {
+    width: 50vh;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form__options {
+    display: flex;
+    gap: 10px;
+}
+.form__options input{
+    /* height: 20px; */
+    width: 25px;
+}
+
+.form__option_text {
+    font-size: 20px;
+    font-weight: 400;
+}
+#result{
+    display: none;
+    margin: 70px;
+    font-size: 25px;
+}
+.submit_btn{
+    border: none;
+    background-color: #5496ff;
+    color: white;
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#reset{
+    display: none;
+}
+.main_container button:hover{
+    background-color: #4089ff;
+}
+@media screen and (max-width:540px) {
+    .container__form_question {
+        width: 70vw;
+    }
+
+    .main__container_form {
+        margin: 50px;
+    }
+}
